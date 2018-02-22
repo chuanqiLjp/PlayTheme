@@ -22,8 +22,7 @@ public class HHQYApplication extends Application {
     private RefWatcher refWatcher;
 
     public static RefWatcher getRefWatcher(Context context) {
-        HHQYApplication application = (HHQYApplication) context
-                .getApplicationContext();
+        HHQYApplication application = (HHQYApplication) context.getApplicationContext();
         return application.refWatcher;
     }
 
