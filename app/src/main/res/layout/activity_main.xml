@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hhqy.learnplaytheme.MainActivity">
+
+    <com.com.hhqy.ljp.banner.HBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="reset"
+                android:text="reset"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startAutoPlay"
+                android:text="startAutoPlay"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stopAutoPlay"
+                android:text="stopAutoPlay"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stopPlay"
+                android:text="stopPlay"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="refresh"
+                android:text="refresh"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onePic"
+                android:text="onePic"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onlyPic"
+                android:text="onlyPic"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="oneVideo"
+                android:text="oneVideo"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onlyVideo"
+                android:text="onlyVideo"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onePicOneVideo"
+                android:text="onePicOneVideo"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="finishActivity"
+                android:text="finishActivity"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToActivity"
+                android:text="goToActivity"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="upVoice"
+                android:text="upVoice"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="isTouch"
+            android:text="isTouch"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="isAuto"
+            android:text="isAuto"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="delayTime"
+            android:text="delayTime"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>
